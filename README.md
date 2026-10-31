@@ -1,0 +1,1 @@
+AppleSense ADMS\n\nNext.js, React, TypeScript and Supabase. Copy .env.example to .env.local, set the Supabase URL and publishable anon key, then run npm install and npm run dev. Never expose a service-role key in browser variables.\n
