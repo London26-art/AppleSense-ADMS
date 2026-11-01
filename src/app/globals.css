@@ -83,3 +83,19 @@ footer{color:#9ba4b1}
 .decision.negotiate{background:#fff3df;color:#bd7416;border:1px solid #f5dfb9}
 .decision.reject{background:#ffeded;color:#c33434;border:1px solid #f3d0d0}
 @media(max-width:760px){.mode-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.mode-tabs button{font-size:9px}.mode-intro{align-items:flex-start}}
+
+
+.pricing-adjustments{margin-top:20px;padding:16px;background:linear-gradient(145deg,#f8fbff,#f1f6fd);border:1px solid #e0eaf6;border-radius:15px}
+.adjustment-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.adjustment-heading b{display:block;font-size:11px}
+.adjustment-heading small{display:block;color:#788597;font-size:9px;margin-top:4px}
+.adjustment-heading>span{font-size:12px;font-weight:800;padding:7px 10px;border-radius:9px}
+.adjust-up{color:#13814f;background:#e4f6ec}
+.adjust-down{color:#c43d3d;background:#ffeded}
+.adjustment-row,.adjustment-total{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:9px 0;border-top:1px solid #e4ebf3;font-size:10px}
+.adjustment-row span,.adjustment-total span{color:#69778a}
+.adjustment-row b{font-size:10px}
+.adjustment-total{margin-top:3px;border-top:1px solid #d8e3f0;font-weight:750}
+.adjustment-total b{font-size:16px;color:#126fd0}
+.pricing-note{display:block;margin-top:10px;color:#8591a1;font-size:9px;line-height:1.55}
+.calculator .fields label small{display:block;color:#8994a3;font-size:9px;line-height:1.4;margin-top:5px}
