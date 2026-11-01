@@ -105,3 +105,13 @@ footer{color:#9ba4b1}
 /* Dark AppleSense mark on light surfaces, with no enclosing tile */
 .logo-mark img{filter:brightness(0) opacity(.78)}
 .login-card>.logo-mark img{filter:brightness(0) opacity(.82)}
+
+/* AppleSense brand campaign layout */
+.login{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(390px,.75fr);min-height:100vh;background:#f7f8fa;padding:0;gap:0}
+.login-visual{position:relative;min-height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:46px 5vw;color:#fff;background:radial-gradient(ellipse at 48% 48%,#30343b 0%,#17191d 38%,#050607 78%);isolation:isolate}
+.login-visual:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.18),rgba(0,0,0,.05)),radial-gradient(ellipse at 55% 55%,rgba(180,190,205,.13),transparent 48%)}
+.login-visual-brand{display:flex;align-items:center;gap:14px}.login-visual-brand .logo-mark{width:54px;height:54px}.login-visual-brand .logo-mark img{filter:brightness(0) invert(1)}.login-visual-brand b{display:block;font-size:24px;font-weight:500;letter-spacing:.04em}.login-visual-brand small{display:block;color:#85888d;font-size:9px;letter-spacing:.16em;margin-top:4px}
+.login-visual-copy{max-width:520px;margin:0 auto 5vh;text-align:left}.login-visual-copy h2{font-size:clamp(38px,5vw,66px);line-height:1.04;letter-spacing:-.045em;font-weight:500;margin:16px 0}.login-visual-copy p{font-size:14px;color:#a8abb1;max-width:390px;line-height:1.7}.login-visual-foot{font-size:9px;letter-spacing:.2em;color:#74777d}
+.login-panel{display:grid;place-items:center;padding:38px 28px;background:#f8f9fb}.login-card{width:min(100%,390px);padding:0;border:0;background:transparent;box-shadow:none}.login-card>.logo-mark{width:70px;height:70px;margin:0 0 24px}.login-card h1{font-size:30px;letter-spacing:-.04em}.hero{background:radial-gradient(ellipse at 72% 35%,#3c414a 0%,#1d2025 42%,#090a0c 100%);color:#fff;position:relative;overflow:hidden}.hero p{color:#b8bbc1}.hero .eyebrow{color:#aeb4bf}.hero .date{color:#8f949d}.hero-mark .logo-mark img{filter:brightness(0) invert(1);opacity:.88}.hero-tagline{font-size:9px;letter-spacing:.15em;color:#d7d9de;margin-top:22px}.hero-tagline span{display:block;color:#969ba4;margin-top:8px}
+.side-brand .logo-mark img{filter:brightness(0) opacity(.8)}.side-brand{gap:0}
+@media(max-width:900px){.login{grid-template-columns:1fr}.login-visual{min-height:270px;padding:26px 7vw}.login-visual-copy{margin:50px 0 10px}.login-visual-copy h2{font-size:38px}.login-visual-foot{display:none}.login-panel{padding:42px 24px}.login-card{max-width:430px}}
