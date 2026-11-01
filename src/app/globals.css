@@ -60,3 +60,26 @@ td{font-size:10.5px}
 .result-panel{border-radius:18px}
 footer{color:#9ba4b1}
 @media(max-width:760px){.side{backdrop-filter:blur(18px)}.side nav button{border-radius:10px}.content{padding-top:20px}.topbar h1{font-size:23px}}
+
+
+.mode-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:6px;background:#f1f4f8;border-radius:14px;margin:20px 0}
+.mode-tabs button{min-height:42px;border-radius:10px;font-weight:650}
+.mode-tabs button.active{background:#fff;color:#0879ee;box-shadow:0 2px 9px rgba(25,48,80,.1)}
+.mode-intro{display:flex;align-items:center;gap:13px;padding:15px 16px;margin:14px 0 18px;background:linear-gradient(110deg,#f5f9ff,#eef5ff);border:1px solid #e1edfb;border-radius:14px}
+.mode-symbol{width:42px;height:42px;border-radius:12px;background:#fff;color:#0879ee;display:grid;place-items:center;box-shadow:0 2px 8px rgba(27,80,145,.08);flex:none}
+.mode-symbol .app-icon{width:21px;height:21px}
+.mode-intro b{font-size:12px;display:block;margin-bottom:4px}
+.mode-intro p{font-size:10px;color:#6f7d90;line-height:1.5;margin:0}
+.calc-section{padding:18px 0}
+.calc-section h3{font-size:12px;font-weight:800;margin:0 0 13px}
+.calc-section>.fields{margin-top:0}
+.decision-explain{font-size:10px;color:#667386;line-height:1.65;margin:0 0 15px}
+.security-summary{margin:15px 0;padding:13px;background:#f7f9fc;border-radius:12px}
+.security-summary>b{display:block;font-size:10px;margin-bottom:7px}
+.security-summary>div{display:flex;justify-content:space-between;padding:7px 0;border-top:1px solid #e9edf3;font-size:9px;color:#697586}
+.security-summary>div b{font-size:9px}
+.decision{width:100%;letter-spacing:1.6px}
+.decision.buy{background:#e5f7ed;color:#12834f;border:1px solid #c9edd9}
+.decision.negotiate{background:#fff3df;color:#bd7416;border:1px solid #f5dfb9}
+.decision.reject{background:#ffeded;color:#c33434;border:1px solid #f3d0d0}
+@media(max-width:760px){.mode-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.mode-tabs button{font-size:9px}.mode-intro{align-items:flex-start}}
