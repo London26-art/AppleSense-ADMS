@@ -80,7 +80,7 @@ function Decision({onSave}:any){
  const storagePct=storageAdjust[storage]??0,gradePct=gradeAdjust[grade]??0,adjustmentPct=storagePct+gradePct+batteryAdjust;
  const storageAmount=baseResale*storagePct/100,gradeAmount=baseResale*gradePct/100,batteryAmount=baseResale*batteryAdjust/100;
  const adjustedResale=Math.max(0,baseResale+storageAmount+gradeAmount+batteryAmount);
- const total=(Number(ask)||0)+(Number(repairs)||0)+(Number(fees)||0)+(Number(reserve)||0),profit=adjustedResale-total,margin=adjustedResale?profit/adjustedResale*100:0,targetMargin=Math.max(0,Number(target)||0),max=adjustedResale/(1+targetMargin/100)-(Number(repairs)||0)-(Number(fees)||0)-(Number(reserve)||0);
+ const total=(Number(ask)||0)+(Number(repairs)||0)+(Number(fees)||0)+(Number(reserve)||0),profit=adjustedResale-total,margin=adjustedResale?profit/adjustedResale*100:0,targetMargin=Math.max(0,Number(target)||0),max=adjustedResale*(1-targetMargin/100)-(Number(repairs)||0)-(Number(fees)||0)-(Number(reserve)||0);
  const securityFail=lock!=='Clear'||findMy!=='Off'||mdm!=='Clear'||imei!=='Verified'||carrier!=='Unlocked';
  const decision=securityFail||adjustedResale<=0||profit<0||max<=0?'REJECT':margin>=targetMargin?'BUY':'NEGOTIATE';
  const moneyDelta=(x:number)=>(x>=0?'+':'−')+cash(Math.abs(x));
