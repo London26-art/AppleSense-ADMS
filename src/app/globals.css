@@ -146,3 +146,13 @@ footer{color:#9ba4b1}
 .hero-mark{margin-right:28px;transform:none;opacity:.72}
 .hero-mark .logo-mark{width:160px;height:160px}
 @media(max-width:900px){.login{grid-template-columns:1fr}.login-visual{min-height:44vh;padding:28px}.login-visual-copy{margin-top:70px}.login-panel{padding:25px}.hero{min-height:190px}.hero-mark{display:none}}
+
+/* Sign-in campaign slideshow: crossfade only, no changes to app workflows */
+.login-campaign-slideshow{position:relative;width:100%;height:clamp(190px,32vh,330px);margin:clamp(24px,5vh,54px) 0 24px;overflow:hidden;border-radius:2px;background:radial-gradient(ellipse at center,#292e36 0%,#08090b 78%);isolation:isolate}
+.login-campaign-slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;opacity:0;transform:scale(1.025);transition:opacity 950ms ease-in-out,transform 1800ms ease-in-out;will-change:opacity,transform}
+.login-campaign-slideshow img.active{opacity:1;transform:scale(1)}
+.login-campaign-dots{position:absolute;z-index:2;bottom:12px;left:50%;display:flex;gap:7px;transform:translateX(-50%)}
+.login-campaign-dots i{display:block;width:5px;height:5px;border-radius:50%;background:#ffffff55;transition:all 500ms ease}
+.login-campaign-dots i.active{width:19px;border-radius:6px;background:#fff}
+@media(max-width:900px){.login-campaign-slideshow{height:clamp(170px,29vh,260px);margin:25px 0 20px}}
+@media(prefers-reduced-motion:reduce){.login-campaign-slideshow img,.login-campaign-dots i{transition:none}}
